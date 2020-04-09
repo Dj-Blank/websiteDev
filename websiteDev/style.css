@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image:url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header{
+    width: 100%;
+    height:80px;
+    display: block;
+    background-color: pink;
+}
+
+.inner_header{
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.logo{
+    color: brown;
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo h1{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "Monserrat";
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.logo h1 span{
+    font-weight: 800;
+}
+
+.nav{
+    float: right;
+    height: 100%;
+}
+.nav a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+}
+
+.nav a:last-child{
+    padding-right: 0;
+}
+
+.nav a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color:  brown;
+    font-family: "Monserrat";
+    font-size: 20px;
+    font-weight: 150;
+}
+
+.title{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title b1{
+    color: black;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+.title1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+    
+}
+
+.title2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+div#slider { 
+    width: 50%;
+    margin: 100px auto;
+    margin-top: 200px;
+} 
+
+div#slider figure {
+    position: relative; 
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+iv#slider figure img { 
+    width: 20%; 
+    height: auto; 
+    float: left; 
+}
+
+div#slider figure img { 
+    width: 20%; 
+    height: auto; 
+    float: left; 
+}
+
+div#slider { 
+    width: 80%; 
+    max-width: 1000px; 
+    overflow: hidden 
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn{
+    border: 1px black;
+    background: white;
+    color: maroon;
+    padding: 10px 20px;
+    font-size: 32px;
+    margin: 10px;
+    transition: 0.8s;
+    border-radius: 25px;
+}
+
+.btn:hover{
+    color: brown;
+    background-color: pink;
+    font-size: 40px;
+}
+
+.container-text {
+    background: white;
+    padding: 40px;
+    margin: 100px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25px;
+    transition: 0.8s;
+    
+}
+
+.container-text:hover{
+    color: brown;
+    background-color: pink;
+    font-size: 40;
+}
+
+#more {
+    display: none;
+}
+
+
+.container-text2 {
+    background: white;
+    text-align: center;
+    position: absolute;
+    font-size: 25px;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+
+
+.container-text2:hover{
+    color: brown;
+    background-color: pink;
+    font-size: 40;
+}
+
+.news-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    width: 20%;
+    margin: 20px;
+    
+}
+
+.thumbnail-item1 {
+    background-image: url('dragonsheen.jpg');
+    height: 300px;
+    position: relative;
+    background-size: 380px 300px;
+    background-repeat: no-repeat;
+}
+
+.thumbnail-item2 {
+    background-image: url('stormy.jpg');
+    height: 300px;
+    position: relative;
+    background-size: 380px 300px;
+    background-repeat: no-repeat;
+}
+.thumbnail-item3 {
+    background-image: url('raincoat.jpg');
+    height: 300px;
+    position: relative;
+    background-size: 380px 300px;
+    background-repeat: no-repeat;
+}
+.thumbnail-item4 {
+    background-image: url('baby.jpg');
+    height: 300px;
+    position: relative;
+    background-size: 380px 300px;
+    background-repeat: no-repeat;
+}
+
+
+.grid-item .overlay-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.grid-item .overlay-item:hover {
+    opacity: 1;
+}
+
+.overlay-item .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+}
+
+.homepage-news h3{
+    background-color: pink;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+#myBtn{
+    border: 1px black;
+    background: white;
+    color: maroon;
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 20px;
+    transition: 0.8s;
+    border-radius: 25px;
+}
+
+
+button {
+    padding-bottom: 50px;
+  }
+  
+.ui.fluid.form {
+margin: auto;
+width: 300px;
+margin-top: 10px;
+}
+
+.valider {
+text-align: center;
+margin: 10px 0px 10px 0px;
+}
+
+.box p{
+    text-align: center;
+    background-color: pink;
+    margin: 20px;
+    padding: 0px;
+    font-size: 15px;
+    color: brown;
+    font-weight: 500px;
+}

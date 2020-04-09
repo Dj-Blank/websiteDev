@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Cat</title>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo">
+                <h1>Hena<span>CAT</span></h1>
+            </div>
+
+            <ul class="nav">
+                <a href="index.html"><li>Home</li></a>
+                <a href="cats.html"><li>Cats</li></a>
+                <a href="adoption.html"><li>Adoption</li></a>
+            </ul>
+        </div>
+    </div>
+
+    <label>
+        <form class="ui fluid form" action="php.php" method="POST">
+            <div class="field">
+              <input type="text" placeholder="surname" name="surname">
+              
+            </div>
+            </div>
+            <div class="field">
+                <input type="text" placeholder="name" name="name">
+                
+            </div>
+            <div class="field">
+                <input type="text" placeholder="address" name="address">
+                
+            </div>
+            <div class="field">
+                <input type="text" placeholder="phonenumber" name="phonenumber">
+                
+            </div>
+            <div class="field">
+                <input type="email" placeholder="email" name="email">
+                
+            </div>
+            <div class="box">
+                <p>Do you have kids?</p>
+                <select name="kids">
+                    <option selected hidden value=""></option>
+                    <option>No</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>More than 2</option>
+                </select>
+            </div>
+            <div class="box">
+                <p>Do you have current pets?</p>
+                <select name="pets">
+                    <option selected hidden value=""></option>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+            </div>
+            <div class="box">
+                <p>What is your home like?</p>
+                <select name="home">
+                    <option selected hidden value=""></option>
+                    <option>Appartment</option>
+                    <option>House</option>
+                </select>
+            </div>
+            <div class="box">
+                <p>Which animal you want to give a home?</p>
+                <select name="pusheen">
+                    <option selected hidden value=""></option>
+                    <option>DragonSheen</option>
+                    <option>Stormy</option>
+                    <option>RainCoat</option>
+                    <option>Baby</option>
+                </select>
+            </div>
+            <div class="valider">
+                <button class="ui button">Valider</button>
+                </div>
+            </div>
+            
+        </form>
+    </label>
+
+</body>
+</html>
